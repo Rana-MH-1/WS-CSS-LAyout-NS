@@ -1,0 +1,31 @@
+.container{
+    border: 1px solid red;
+    flex-direction: row; /*par default ==> we can eliminate it */
+    display: flex;
+    flex-wrap: wrap; /* Responsive || par default : no-wrap*/ 
+    width: 600px;
+    height:700px;
+    /* flex-wrap: wrap; */
+    /* positionnement par rapport l'axe x (row) */
+        /*  with flex-wrap and width of conatiner > total width of item ==> multiLines==> we can applicate the property align-content*/
+
+     align-content: center ; 
+     gap:10px 20px;
+     /* row-gap:10px;
+     column-gap: 10px; */
+}
+.item{
+    display: flex;
+    justify-content: center;  /* align items selon x row */
+    align-items: center;     /* align items selon y column */
+
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+#item1{
+    /* align-self: flex-end; */
+    /* flex-basis: 200px; */
+    /* flex-grow: 3; */ 
+}
